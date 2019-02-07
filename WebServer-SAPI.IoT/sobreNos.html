@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>SAPI - Sisitema de Automação para Pivô de Irrigação</title>
+        <div id="slide">
+                <h1>SAPI - IoT</h1>
+                <h3>Sistema de Automação para Pivô de Irrigação </h3>
+        </div>
+        
+    </head>
+    <body>
+        <div>
+            <nav id="menu_link">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="views.html">Viwes</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                </ul>
+             </nav>
+   <center> <nav id="sobrenos">
+        
+           <center><h2>Sobre Nós</h2></center> 
+            <center><p>
+                SAPI-IoT é um projeto desenvolvido para conclusão no curso de Ciências da 
+                computação no Centro Universitários Adventista de São Paulo – UNASP – SP. 
+                Desenvolvido pelo estudante Ezequiel Muxito, orientado pelo Professor Mestre André Marcos da Silva, 
+                com tema: IoT como proposta de automação de um pivô de irrigação para agricultura inteligente. 
+
+ 
+                <p>A proposta é apresentar soluções inteligente para o mercado de agronegócio, tornando 
+                    o manuseamento de materiais agrícola mas fácil e prático em ser usado. Para isso trabalhei com tendencias tecnlogicas
+                no mercado mundial de automação, Arduino aplicado em Internet das Coisas. </p>  
+               
+                </p></center>
+           
+                
+    </nav></center>
+</script>
+<style type="text/css">
+    div > h2{
+        color: #00979C;
+    }
+    h1{
+        color: black;
+        font-size: 72px;
+        font-family: Aclonica;
+        margin: 2px;
+        margin-left: 60px;
+    }
+    h3{
+        color: blue;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    h4{
+        font-size: 18px;
+        margin-top: 60px;
+        margin-left: 25px;
+        border-bottom:3px solid #EA0000;  
+        width:380px;
+        border-bottom-color: gray;
+    }
+    #modo{
+        font-size: 20px;
+        margin-top: 40px;
+        margin-left: 25px;
+        border-bottom:3px solid rgb(17, 16, 16);  
+        width:380px;
+        border-bottom-color: gray;
+        color: black;
+    }
+    p {
+        margin-top: 10px;
+        margin-left: 30px;
+        color: #000; 
+        width: 800px;
+        text-align:justify;
+        
+    }
+    #n{
+        margin-top: 50px;
+        margin-left: 30px;
+        color: rgb(23, 0, 234);  
+    }
+    #solo{
+        margin-top: 10px;
+        margin-left: 30px;
+        color: rgb(12, 12, 12); 
+    }
+    #sobrenos{
+        background-color: rgba(255, 255, 255, 0.616);
+        width: 950px;
+        height: 300px;
+        
+        
+    }
+    b{
+        margin-left: 30px;  
+    }
+    #menu_link ul{
+            
+        padding:0px;
+        margin:0px;
+        background-color: black;
+        list-style:none;              
+    }
+    #menu_link ul li { 
+        display: inline; 
+    }
+    #menu_link ul li a {
+        padding: 2px 10px;
+        display: inline-block;
+
+        /* visual do link */
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-bottom:3px solid black;
+    }
+    #menu_link ul li a:hover {
+        background-color:#D6D6D6;
+        color: black;
+        border-bottom:3px solid #EA0000;
+    }
+    body{
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0px;  
+        background-image: url(imag/fundo-sapi-iot-web1.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        
+    }
+    #nivel{
+        padding-top: 0px;
+        position: relative;
+        width: 22%;
+        height: 30px;
+        margin-right: auto;
+        margin-top: 0;
+        margin-left: 10;
+        font-size: 10px;
+        color: white;
+        text-align: center;
+        font-family: arial;
+        border: 0px solid red;
+    }
+    #ldi{
+        margin-top: 50px;
+        margin-left: 5px;
+        color: rgb(12, 12, 12);  
+        font-size: 15px;
+    }
+    #umidade{
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;  
+    }
+    #wrapper {
+        padding-top: 90px;
+        position: relative;
+        width: 40%;
+        height: 100px;
+        margin-right: auto;
+        margin-top: 0;
+        margin-left: 5px;
+        font-size: 10px;
+        color: gray;
+        text-align: center;
+        font-family: Helvetica;
+        border: 0px solid red;
+    }
+    div.rele_ligada {
+        background-color: green;
+        position: absolute; 
+        left:0px; 
+        top:0px; 
+        width: 40px; 
+        height: 40px; 
+        border-radius:5px;
+    }
+    div.rele_desligada {
+        background-color: gray;
+        position: absolute; 
+        left:0px; 
+        top:0px; 
+        width: 40px; 
+        height: 40px; 
+        border-radius:5px;
+    }
+    .botao {
+        position: absolute; 
+        left:50px; 
+        top:0px;
+
+        -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+        box-shadow:inset 0px 1px 0px 0px #ffffff;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+        background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+        background-color:#ededed;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        color: red;
+        font-family:Helvetica;
+        font-size:20px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:1px 1px 0px #ffffff;
+        width: 40px;
+        text-align: center;
+    }.botao:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+        background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+        background-color:#dfdfdf;
+        cursor: pointer;
+    }.botao:active {
+
+    }
+</style> 
+   
+</body>
+</html>
